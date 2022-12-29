@@ -50,7 +50,7 @@ function App() {
               </div>
               <Spacers choice={"item_break"} />
               <div class="w-[90%] m-auto">
-                {/*<WebApps />*/}
+                <WebApps />
               </div>
               <Spacers choice={"item_footer"} />
             </div>

@@ -3,7 +3,7 @@ export const WebItems = [
     {
         title: "Shopping List",
         description: "In Development", 
-        link: "Shopping-List",
+        link: "shopping",
     },
     {
         title: "ToDo",

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 import { WebItems } from "./DataFiles/web-apps"
 
@@ -23,16 +22,17 @@ export default function WebApps() {
     )
 }
 
-function get_link(title) {
-    const link = "/Apps/"
-    let path = link.concat(title);
+function get_link(link) {
+    const prefix = "https://";
+    const sufix = ".apps.pdxgrantc.com";
+    let path = prefix + link + sufix;
     return path;
 }
 
 const Application = ({ title, description, link }) => {
     return (
         <>
-            <Link class="on_desktop:w-[47%] hover:bg-apps_bg_pressed on_desktop:min-w-[400px] w-fit h-fit on_mobile:w-[100%] min-h-[30vh] bg-apps_bg_color" to={get_link(link)}>
+            <a class="on_desktop:w-[47%] hover:bg-apps_bg_pressed on_desktop:min-w-[400px] w-fit h-fit on_mobile:w-[100%] min-h-[30vh] bg-apps_bg_color" href={get_link(link)}>
                 <div class="p-[5%]">
                     <div class="flex flex-nowrap justify-between h-min">
                         <div>
@@ -42,7 +42,7 @@ const Application = ({ title, description, link }) => {
                     </div>
                     <p class="text-[1.8rem] on_desktop:max-w-[42vw] leading-[2rem]">{description}</p>
                 </div>
-            </Link>
+            </a>
         </>
     );
 };
