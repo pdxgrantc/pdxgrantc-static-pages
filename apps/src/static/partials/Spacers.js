@@ -1,12 +1,7 @@
 import React from 'react'
 
 export default function Spacers({ choice }) {
-    return (
-        <>
-            <div class="h-[2vh]"></div>
-        </>
-    )
-    /*if ((choice === "")||(choice === null)){
+    if ((choice === "")||(choice === null)){
         return (
             <>
                 <div class="h-[2vh]"></div>
@@ -53,5 +48,4 @@ export default function Spacers({ choice }) {
             <></>
         )
     }
-    */
 }

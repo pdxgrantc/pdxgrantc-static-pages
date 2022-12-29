@@ -10,7 +10,7 @@ export default function Header( ) {
                 <DesktopHeader />
             </div>
             <div class="on_desktop:hidden flex justify-around bg-black w-[90vw] m-auto">
-                <MobileHeader />
+                {/*<MobileHeader />*/}
             </div>
         </>
     )
